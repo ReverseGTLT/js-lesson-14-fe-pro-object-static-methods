@@ -6,7 +6,7 @@
  */
 export const keys = (object) => {
   let arr = [];
-  for (let item in keys) {
+  for (let item in object) {
    arr.push(item)
   }
   return arr;
@@ -20,8 +20,8 @@ export const keys = (object) => {
  */
 export const values = (object) => {
   let arr = [];
-  for (let item in values) {
-    arr.push(values[item])
+  for (let item in object) {
+    arr.push(object[item])
   }
   return arr;
 };
